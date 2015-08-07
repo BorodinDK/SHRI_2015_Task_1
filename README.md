@@ -1,6 +1,8 @@
 Табло аэропорта
 ========
 
+Ссылка на рабочий пример – [borodindk.github.io/SHRI_2015_Task_1](http://borodindk.github.io/SHRI_2015_Task_1)
+
 Данные представленные в этой таблице я спарсил с официального сайта [аэропорта Шереметьево](http://svo.aero/timetable/today/).
 
 ###Информация по вёрстке
@@ -25,6 +27,6 @@
 }
 ```
 
-![скриншот табло аэропорта](http://denisborodin.ru/projects/yandex_shri/github_img/shri_task_1.jpg?3)
+![скриншот табло аэропорта](http://denisborodin.ru/projects/yandex_shri/github_img/shri_task_1.jpg?4)
 
 Работа выполнена без использования JavaScript.
