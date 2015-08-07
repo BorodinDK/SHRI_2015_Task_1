@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	vertical-align: top;
+}
+body {
+	font-family: arial;
+	overflow-y: scroll;
+}
+body > header {
+	position: relative;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	width: 100%;
+	height: 110px;
+	padding: 25px 12px;
+	color: #FFF;
+	background: #EEE;
+	background: #4E575A;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.1);
+}
+h1 {
+	font-size: 30px;
+	margin-left: 20px;
+	font-weight: 100;
+	float: left;
+}
+.filter {
+	float: right;
+	clear: right;
+	padding: 5px;
+}
+label {
+	position: relative;
+	margin-right: 25px;
+	padding-left: 19px;
+	cursor: pointer;
+}
+label:before {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	display: block;
+	width: 12px;
+	height: 12px;
+	content: "";
+	background: url(../img/checkbox.png);
+}
+.table_title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.1);
+}
+.title {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.title > span {
+	padding: 8px;
+}
+.line {
+	display: none;
+	outline: none;
+}
+.line a {
+	display: table-row;
+	table-layout: fixed;
+	text-decoration: none;
+	color: #222;
+}
+.line a > span:first-child {
+	background: url(../img/landing.png) no-repeat center;
+}
+.table > div > a > span:first-child {
+	background-image: url(../img/takeoff.png);
+}
+.line:hover {
+	background: rgba(168,255,225,.5) !important;
+}
+.line a > span:hover:after {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 9999px;
+	margin-top: -5000px;
+	content: "";
+	background: rgba(168,255,225,.5);
+}
+.table {
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 110px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.line a > span,
+.title > span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.line a > span:first-child,
+.title > span:first-child {
+	width: 80px;
+	max-width: 5%;
+}
+.line a > span:nth-child(2),
+.title > span:nth-child(2) {
+	width: 80px;
+}
+.line a > span:nth-child(7),
+.title > span:nth-child(7) {
+	width: 10%; 
+	max-width: 150px;
+}
+.line a > span:nth-child(9),
+.title > span:nth-child(9) {
+	width: 120px;
+}
+
+.line a > span {
+	position: relative;
+	padding: 10px 8px;
+}
+.line img{
+	width: 100%;
+	max-width: 150px;
+}
+input[type="checkbox"] {
+	position: absolute;
+	top: -999px;
+}
+#ll, #tt{
+	display: none;
+}
+#landing:checked ~ .table > article,
+#takeoff:checked ~ .table > div {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+#landing:checked ~ header #ll,
+#takeoff:checked ~ header #tt{
+	display: inline-block;
+}
+#landing:checked+#takeoff:checked ~ header #ll,
+#landing:checked+#takeoff:checked ~ header #tt,
+input:checked ~ header span:nth-child(7n) .nn{
+	display: none;
+}
+#landing:checked+#takeoff:checked ~ header span:nth-child(7n) .nn{
+	display: inline-block;
+}
+#landing:checked ~ header label[for="landing"]:before,
+#takeoff:checked ~ header label[for="takeoff"]:before {
+	background-position: -12px;
+}
+#landing:checked + #takeoff:not(:checked) ~ .table > article:nth-of-type(odd),
+#landing:not(:checked) + #takeoff:checked ~ .table > div:nth-of-type(odd),
+#landing:checked + #takeoff:checked ~ .table > .line:nth-child(2n-1) {
+	background: #EEF5F8;
+	background: rgba(69,117,138,.1);
+}
+#landing:not(:checked) + #takeoff:not(:checked) ~ .table:after {
+	display: block;
+	margin-top: 100px;
+	content: attr(data-info);
+	text-align: center;
+	color: #4E575A;
+}
+.windows {
+	position: relative;
+}
+.window {
+	position: fixed;
+	top: 150px;
+	right: 0;
+	left: 0;
+	display: none;
+	width: 450px;
+	margin: auto;
+	padding: 30px;
+	background: #FFF;
+	box-shadow: 0 0 0 9999px rgba(0,0,0,.1), 0 3px 3px 0 rgba(0,0,0,.2);
+}
+.window:target {
+	display: block;
+}
+.window a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	opacity: .5;
+	background: url(../img/x.png) no-repeat center;
+	background-size: 16px auto;
+}
+.window a:hover {
+	opacity: 1;
+}
+.window h3 {
+	font-weight: normal;
+	display: block;
+	margin-bottom: 12px;
+	text-align: center;
+}
+.window td {
+	padding: 3px;
+}
+.window tr td:first-child {
+	padding-right: 20px;
+	text-align: right;
+}
+.red {
+	display: none;
+}
+
+@media (max-width: 1680px){
+	.red{
+		display: inline-block;
+	}
+	.nn{
+		display: none !important;
+	}
+}
+@media (max-width: 1080px) {
+	.line a > span:nth-child(9), .title > span:nth-child(9){
+		display: none;
+	}
+}
+@media (max-width: 880px) {
+	.line a > span:nth-child(4), .title > span:nth-child(4){
+		display: none;
+	}file:///C:/Users/Borod/Desktop/yandex/Denis/1/index7.html#
+}
+@media (max-width: 680px) {
+	.line a > span:nth-child(7), .title > span:nth-child(7),
+	.line a > span:nth-child(8), .title > span:nth-child(8){
+		display: none;
+	}
+}
+@media (max-width: 550px) {
+	.line a > span:first-child, .title > span:first-child,
+	.filter{
+		display: none;
+	}
+	.line a > span:nth-child(2), .title > span:nth-child(2){
+		width: 50px;
+	}
+	.window{
+		width: 100%;
+		height: 100%;
+		top:110px;
+		margin: 0;
+	}
+}
+@media (max-width: 480px) {
+	.line a > span:nth-child(5), .title > span:nth-child(5){
+		display: none;
+	}
+}

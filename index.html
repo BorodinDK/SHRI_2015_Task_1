@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Табло аэропорта</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<input type="checkbox" id="landing" tabindex="1" checked>
+	<input type="checkbox" id="takeoff" tabindex="1" checked>
+	<header>
+		<h1>Табло аэропорта</h1>
+		<div class="filter">
+			<label for="landing" tabindex="1">Прилёт</label>
+			<label for="takeoff" tabindex="1">Вылет</label>
+		</div>
+		<div class="table_title">
+			<div class="title">
+				<span>Тип</span>
+				<span><span class="nn">Номер</span><span class="red">№</span></span>
+				<span>авиокомпания</span>
+				<span>логотип</span>
+				<span><span class="nn">тип воздушного судна</span><span class="red">Самолёт</span></span>
+				<span><span class="nn">аэропорт</span> назначения</span>
+				<span><span class="nn">плановое</span> время<spnn id="ll">&nbsp;прилёта</spnn><spnn id="tt">&nbsp;вылета</spnn></span>
+				<span>Статус</span>
+				<span>примечание</span>
+			</div>
+		</div>
+	</header>
+	
+	<div class="table" data-info="Используйте чекбоксы вверху страницы, для отображения рейсов">
+		<div class="line" tabindex="1">
+			<a href="#f4430">
+				<span title="Вылет"></span>
+				<span>4430</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-321</span>
+				<span>Екатеринбург (Кольцово)</span>
+				<span>02:20<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f4964">
+				<span title="Вылет"></span>
+				<span>4964</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-320</span>
+				<span>Челябинск (Баландино)</span>
+				<span>02:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f8153">
+				<span title="Прилёт"></span>
+				<span>8153</span>
+				<span>Эйр Сербиа</span>
+				<span><img alt="" src="img/logo/JU.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>00:11<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;00:07</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f2901">
+				<span title="Вылет"></span>
+				<span>2901</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-319</span>
+				<span>Краснодар (Пашковский)</span>
+				<span>01:59<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2942">
+				<span title="Вылет"></span>
+				<span>2942</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Челябинск (Баландино)</span>
+				<span>02:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3234">
+				<span title="Вылет"></span>
+				<span>3234</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-321</span>
+				<span>Екатеринбург (Кольцово)</span>
+				<span>02:20<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f031">
+				<span title="Прилёт"></span>
+				<span>031</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>00:11<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;00:07</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f1112">
+				<span title="Вылет"></span>
+				<span>1112</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-319</span>
+				<span>Краснодар (Пашковский)</span>
+				<span>01:59<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1408">
+				<span title="Вылет"></span>
+				<span>1408</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-321</span>
+				<span>Екатеринбург (Кольцово)</span>
+				<span>02:20<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1424">
+				<span title="Вылет"></span>
+				<span>1424</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Челябинск (Баландино)</span>
+				<span>02:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f1144">
+				<span title="Прилёт"></span>
+				<span>1144</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-319</span>
+				<span>Москва (Шереметьево)</span>
+				<span>23:51<span class="nn">, 6 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;23:47</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f2930">
+				<span title="Вылет"></span>
+				<span>2930</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Баку (Гейдар Алиев)</span>
+				<span>02:54<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span></span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1852">
+				<span title="Вылет"></span>
+				<span>1852</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Баку (Гейдар Алиев)</span>
+				<span>02:54<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span></span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f2317">
+				<span title="Прилёт"></span>
+				<span>2317</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>23:51<span class="nn">, 6 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;23:50</span>
+				<span></span>
+			</a>
+		</article>
+		<article class="line" tabindex="1">
+			<a href="#f4451">
+				<span title="Прилёт"></span>
+				<span>4451</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-319</span>
+				<span>Москва (Шереметьево)</span>
+				<span>23:51<span class="nn">, 6 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;23:47</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f4892">
+				<span title="Вылет"></span>
+				<span>4892</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>A-330-300</span>
+				<span>Красноярск (Емельяново)</span>
+				<span>04:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f4912">
+				<span title="Вылет"></span>
+				<span>4912</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-321</span>
+				<span>Новосибирск (Толмачево)</span>
+				<span>04:14<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3948">
+				<span title="Вылет"></span>
+				<span>3948</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>А-321</span>
+				<span>Новосибирск (Толмачево)</span>
+				<span>04:14<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f5651">
+				<span title="Вылет"></span>
+				<span>5651</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>A-330-300</span>
+				<span>Красноярск (Емельяново)</span>
+				<span>04:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3188">
+				<span title="Вылет"></span>
+				<span>3188</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>A-330-300</span>
+				<span>Красноярск (Емельяново)</span>
+				<span>04:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3206">
+				<span title="Вылет"></span>
+				<span>3206</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-321</span>
+				<span>Новосибирск (Толмачево)</span>
+				<span>04:14<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1306">
+				<span title="Вылет"></span>
+				<span>1306</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-321</span>
+				<span>Новосибирск (Толмачево)</span>
+				<span>04:14<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1482">
+				<span title="Вылет"></span>
+				<span>1482</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>A-330-300</span>
+				<span>Красноярск (Емельяново)</span>
+				<span>04:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f2047">
+				<span title="Прилёт"></span>
+				<span>2047</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span></span>
+				<span>Москва (Шереметьево)</span>
+				<span>00:40<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;00:38</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f1802">
+				<span title="Вылет"></span>
+				<span>1802</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Киев (Борисполь)</span>
+				<span>03:12<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 62–84</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1903">
+				<span title="Вылет"></span>
+				<span>1903</span>
+				<span>Пегас Флай</span>
+				<span><img alt="" src="img/logo/IK.jpg"></span>
+				<span>Боинг-767<span class="nn">-300</span></span>
+				<span>Хургада (Хургада)</span>
+				<span>05:04<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span></span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f4942">
+				<span title="Вылет"></span>
+				<span>4942</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-320</span>
+				<span>Казань (Казань)</span>
+				<span>01:43<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f5215">
+				<span title="Вылет"></span>
+				<span>5215</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>А-320</span>
+				<span>Казань (Казань)</span>
+				<span>01:43<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3070">
+				<span title="Вылет"></span>
+				<span>3070</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Казань (Казань)</span>
+				<span>01:43<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1196">
+				<span title="Вылет"></span>
+				<span>1196</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Казань (Казань)</span>
+				<span>01:43<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f4950">
+				<span title="Вылет"></span>
+				<span>4950</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-320</span>
+				<span>Омск (Центральный)</span>
+				<span>03:46<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f5659">
+				<span title="Вылет"></span>
+				<span>5659</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>А-320</span>
+				<span>Омск (Центральный)</span>
+				<span>03:46<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2948">
+				<span title="Вылет"></span>
+				<span>2948</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Омск (Центральный)</span>
+				<span>03:46<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1638">
+				<span title="Вылет"></span>
+				<span>1638</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Омск (Центральный)</span>
+				<span>03:46<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f2133">
+				<span title="Прилёт"></span>
+				<span>2133</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>00:58<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;00:57</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f2866">
+				<span title="Вылет"></span>
+				<span>2866</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Барнаул (Барнаул )</span>
+				<span>04:41<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1428">
+				<span title="Вылет"></span>
+				<span>1428</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Магнитогорск (Магнитогорск)</span>
+				<span>03:00<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1432">
+				<span title="Вылет"></span>
+				<span>1432</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span></span>
+				<span>Барнаул (Барнаул )</span>
+				<span>04:41<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f2539">
+				<span title="Прилёт"></span>
+				<span>2539</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span></span>
+				<span>Москва (Шереметьево)</span>
+				<span>00:38<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;00:35</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f2956">
+				<span title="Вылет"></span>
+				<span>2956</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Ереван (Звартноц)</span>
+				<span>03:23<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 62–84</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1864">
+				<span title="Вылет"></span>
+				<span>1864</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Ереван (Звартноц)</span>
+				<span>03:23<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 62–84</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1244">
+				<span title="Вылет"></span>
+				<span>1244</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span></span>
+				<span>Оренбург (Центральный)</span>
+				<span>02:55<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1632">
+				<span title="Вылет"></span>
+				<span>1632</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Симферополь (Симферополь)</span>
+				<span>03:13<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2858">
+				<span title="Вылет"></span>
+				<span>2858</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Архангельск (Талаги)</span>
+				<span>02:38<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1334">
+				<span title="Вылет"></span>
+				<span>1334</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Архангельск (Талаги)</span>
+				<span>02:38<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f4960">
+				<span title="Вылет"></span>
+				<span>4960</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span>А-320</span>
+				<span>Уфа (Уфа)</span>
+				<span>03:02<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3026">
+				<span title="Вылет"></span>
+				<span>3026</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>А-320</span>
+				<span>Уфа (Уфа)</span>
+				<span>03:02<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2926">
+				<span title="Вылет"></span>
+				<span>2926</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>А-320</span>
+				<span>Уфа (Уфа)</span>
+				<span>03:02<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1234">
+				<span title="Вылет"></span>
+				<span>1234</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Уфа (Уфа)</span>
+				<span>03:02<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1536">
+				<span title="Вылет"></span>
+				<span>1536</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-321</span>
+				<span>Томск (Богашево)</span>
+				<span>05:17<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f036">
+				<span title="Вылет"></span>
+				<span>036</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Санкт-Петербург (Пулково)</span>
+				<span>02:33<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<article class="line" tabindex="1">
+			<a href="#f907">
+				<span title="Прилёт"></span>
+				<span>907</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span>Боинг-737<span class="nn">-800</span></span>
+				<span>Москва (Шереметьево)</span>
+				<span>02:19<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;02:14</span>
+				<span></span>
+			</a>
+		</article>
+		<article class="line" tabindex="1">
+			<a href="#f3123">
+				<span title="Прилёт"></span>
+				<span>3123</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>Боинг-737<span class="nn">-800</span></span>
+				<span>Москва (Шереметьево)</span>
+				<span>02:19<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;02:14</span>
+				<span></span>
+			</a>
+		</article>
+		<article class="line" tabindex="1">
+			<a href="#f560">
+				<span title="Прилёт"></span>
+				<span>560</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>02:46<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;02:30</span>
+				<span></span>
+			</a>
+		</article>
+		<article class="line" tabindex="1">
+			<a href="#f3201">
+				<span title="Прилёт"></span>
+				<span>3201</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span>А-320</span>
+				<span>Москва (Шереметьево)</span>
+				<span>02:46<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;02:30</span>
+				<span></span>
+			</a>
+		</article>
+		<article class="line" tabindex="1">
+			<a href="#f871">
+				<span title="Прилёт"></span>
+				<span>871</span>
+				<span>Онур Эйр</span>
+				<span><img alt="" src="img/logo/8Q.jpg"></span>
+				<span>А-321</span>
+				<span>Москва (Шереметьево)</span>
+				<span>04:06<span class="nn">, 7 августа 2015</span></span>
+				<span>совершил посадку в&nbsp;03:59</span>
+				<span></span>
+			</a>
+		</article>
+		<div class="line" tabindex="1">
+			<a href="#f4934">
+				<span title="Вылет"></span>
+				<span>4934</span>
+				<span>Эйр Франс</span>
+				<span><img alt="" src="img/logo/AF.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Пермь (Большое Савино)</span>
+				<span>03:30<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f3952">
+				<span title="Вылет"></span>
+				<span>3952</span>
+				<span>Алиталия</span>
+				<span><img alt="" src="img/logo/AZ.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Пермь (Большое Савино)</span>
+				<span>03:30<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2922">
+				<span title="Вылет"></span>
+				<span>2922</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Пермь (Большое Савино)</span>
+				<span>03:30<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1218">
+				<span title="Вылет"></span>
+				<span>1218</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Пермь (Большое Савино)</span>
+				<span>03:30<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f2862">
+				<span title="Вылет"></span>
+				<span>2862</span>
+				<span>КЛМ Королевские Голландские Авиалинии</span>
+				<span><img alt="" src="img/logo/KL.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Тюмень (Рощино)</span>
+				<span>04:21<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1508">
+				<span title="Вылет"></span>
+				<span>1508</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span><span class="nn">Сухой </span>Суперджет 100<span class="nn">-90</span></span>
+				<span>Тюмень (Рощино)</span>
+				<span>04:21<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+		<div class="line" tabindex="1">
+			<a href="#f1512">
+				<span title="Вылет"></span>
+				<span>1512</span>
+				<span>Аэрофлот — Российские авиалинии</span>
+				<span><img alt="" src="img/logo/SU.jpg"></span>
+				<span></span>
+				<span>Сургут (Сургут)</span>
+				<span>04:50<span class="nn">, 7 августа 2015</span></span>
+				<span>вылетел</span>
+				<span>Номер стойки регистрации: 4–32</span>
+			</a>
+		</div>
+	</div>
+
+
+
+
+<div class="window" id="f4430">
+	<a href="#"></a>
+	<h3>Рейс №4430</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4430</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Екатеринбург (Кольцово)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:20<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f4964">
+	<a href="#"></a>
+	<h3>Рейс №4964</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4964</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Челябинск (Баландино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f8153">
+	<a href="#"></a>
+	<h3>Рейс №8153</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>8153</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Сербиа</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/JU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>00:11<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;00:07</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f2901">
+	<a href="#"></a>
+	<h3>Рейс №2901</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2901</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-319</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Краснодар (Пашковский)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:59<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2942">
+	<a href="#"></a>
+	<h3>Рейс №2942</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2942</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Челябинск (Баландино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3234">
+	<a href="#"></a>
+	<h3>Рейс №3234</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3234</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Екатеринбург (Кольцово)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:20<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f031">
+	<a href="#"></a>
+	<h3>Рейс №031</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>031</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>00:11<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;00:07</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f1112">
+	<a href="#"></a>
+	<h3>Рейс №1112</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1112</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-319</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Краснодар (Пашковский)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:59<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1408">
+	<a href="#"></a>
+	<h3>Рейс №1408</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1408</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Екатеринбург (Кольцово)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:20<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1424">
+	<a href="#"></a>
+	<h3>Рейс №1424</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1424</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Челябинск (Баландино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1144">
+	<a href="#"></a>
+	<h3>Рейс №1144</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1144</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-319</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>23:51<span class="nn">, 6 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;23:47</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f2930">
+	<a href="#"></a>
+	<h3>Рейс №2930</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2930</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Баку (Гейдар Алиев)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:54<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f1852">
+	<a href="#"></a>
+	<h3>Рейс №1852</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1852</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Баку (Гейдар Алиев)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:54<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f2317">
+	<a href="#"></a>
+	<h3>Рейс №2317</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2317</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>23:51<span class="nn">, 6 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;23:50</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f4451">
+	<a href="#"></a>
+	<h3>Рейс №4451</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4451</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-319</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>23:51<span class="nn">, 6 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;23:47</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f4892">
+	<a href="#"></a>
+	<h3>Рейс №4892</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4892</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>A-330-300</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Красноярск (Емельяново)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f4912">
+	<a href="#"></a>
+	<h3>Рейс №4912</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4912</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Новосибирск (Толмачево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:14<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3948">
+	<a href="#"></a>
+	<h3>Рейс №3948</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3948</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Новосибирск (Толмачево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:14<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f5651">
+	<a href="#"></a>
+	<h3>Рейс №5651</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>5651</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>A-330-300</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Красноярск (Емельяново)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3188">
+	<a href="#"></a>
+	<h3>Рейс №3188</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3188</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>A-330-300</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Красноярск (Емельяново)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3206">
+	<a href="#"></a>
+	<h3>Рейс №3206</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3206</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Новосибирск (Толмачево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:14<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1306">
+	<a href="#"></a>
+	<h3>Рейс №1306</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1306</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Новосибирск (Толмачево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:14<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1482">
+	<a href="#"></a>
+	<h3>Рейс №1482</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1482</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>A-330-300</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Красноярск (Емельяново)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2047">
+	<a href="#"></a>
+	<h3>Рейс №2047</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2047</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td></td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>00:40<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;00:38</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f1802">
+	<a href="#"></a>
+	<h3>Рейс №1802</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1802</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Киев (Борисполь)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:12<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 62–84</td></tr>
+	</table>
+</div>
+<div class="window" id="f1903">
+	<a href="#"></a>
+	<h3>Рейс №1903</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1903</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Пегас Флай</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/IK.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Боинг-767-300</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Хургада (Хургада)</td></tr>
+		<tr><td>Плановое время вылета</td><td>05:04<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f4942">
+	<a href="#"></a>
+	<h3>Рейс №4942</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4942</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Казань (Казань)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:43<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f5215">
+	<a href="#"></a>
+	<h3>Рейс №5215</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>5215</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Казань (Казань)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:43<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3070">
+	<a href="#"></a>
+	<h3>Рейс №3070</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3070</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Казань (Казань)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:43<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1196">
+	<a href="#"></a>
+	<h3>Рейс №1196</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1196</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Казань (Казань)</td></tr>
+		<tr><td>Плановое время вылета</td><td>01:43<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f4950">
+	<a href="#"></a>
+	<h3>Рейс №4950</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4950</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Омск (Центральный)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f5659">
+	<a href="#"></a>
+	<h3>Рейс №5659</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>5659</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Омск (Центральный)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2948">
+	<a href="#"></a>
+	<h3>Рейс №2948</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2948</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Омск (Центральный)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1638">
+	<a href="#"></a>
+	<h3>Рейс №1638</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1638</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Омск (Центральный)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2133">
+	<a href="#"></a>
+	<h3>Рейс №2133</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2133</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>00:58<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;00:57</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f2866">
+	<a href="#"></a>
+	<h3>Рейс №2866</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2866</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Барнаул (Барнаул )</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:41<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1428">
+	<a href="#"></a>
+	<h3>Рейс №1428</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1428</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Магнитогорск (Магнитогорск)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:00<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1432">
+	<a href="#"></a>
+	<h3>Рейс №1432</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1432</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td></td></tr>
+		<tr><td>Аэропорт назначения</td><td>Барнаул (Барнаул )</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:41<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2539">
+	<a href="#"></a>
+	<h3>Рейс №2539</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2539</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td></td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>00:38<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;00:35</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f2956">
+	<a href="#"></a>
+	<h3>Рейс №2956</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2956</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Ереван (Звартноц)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:23<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 62–84</td></tr>
+	</table>
+</div>
+<div class="window" id="f1864">
+	<a href="#"></a>
+	<h3>Рейс №1864</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1864</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Ереван (Звартноц)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:23<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 62–84</td></tr>
+	</table>
+</div>
+<div class="window" id="f1244">
+	<a href="#"></a>
+	<h3>Рейс №1244</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1244</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td></td></tr>
+		<tr><td>Аэропорт назначения</td><td>Оренбург (Центральный)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:55<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1632">
+	<a href="#"></a>
+	<h3>Рейс №1632</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1632</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Симферополь (Симферополь)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:13<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2858">
+	<a href="#"></a>
+	<h3>Рейс №2858</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2858</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Архангельск (Талаги)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:38<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1334">
+	<a href="#"></a>
+	<h3>Рейс №1334</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1334</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Архангельск (Талаги)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:38<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f4960">
+	<a href="#"></a>
+	<h3>Рейс №4960</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4960</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Уфа (Уфа)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:02<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3026">
+	<a href="#"></a>
+	<h3>Рейс №3026</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3026</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Уфа (Уфа)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:02<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2926">
+	<a href="#"></a>
+	<h3>Рейс №2926</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2926</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Уфа (Уфа)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:02<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1234">
+	<a href="#"></a>
+	<h3>Рейс №1234</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1234</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Уфа (Уфа)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:02<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1536">
+	<a href="#"></a>
+	<h3>Рейс №1536</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1536</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Томск (Богашево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>05:17<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f036">
+	<a href="#"></a>
+	<h3>Рейс №036</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>036</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Санкт-Петербург (Пулково)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:33<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f907">
+	<a href="#"></a>
+	<h3>Рейс №907</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>907</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Боинг-737-800</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:19<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;02:14</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f3123">
+	<a href="#"></a>
+	<h3>Рейс №3123</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3123</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Боинг-737-800</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:19<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;02:14</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f560">
+	<a href="#"></a>
+	<h3>Рейс №560</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>560</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;02:30</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f3201">
+	<a href="#"></a>
+	<h3>Рейс №3201</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3201</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-320</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>02:46<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;02:30</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f871">
+	<a href="#"></a>
+	<h3>Рейс №871</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>871</td></tr>
+		<tr><td>Тип рейса</td><td>Прилёт</td></tr>
+		<tr><td>Авокомпания</td><td>Онур Эйр</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/8Q.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>А-321</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Москва (Шереметьево)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:06<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>совершил посадку в&nbsp;03:59</td></tr>
+		<tr><td>примечание</td><td></td></tr>
+	</table>
+</div>
+<div class="window" id="f4934">
+	<a href="#"></a>
+	<h3>Рейс №4934</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>4934</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Эйр Франс</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AF.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Пермь (Большое Савино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:30<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f3952">
+	<a href="#"></a>
+	<h3>Рейс №3952</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>3952</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Алиталия</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/AZ.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Пермь (Большое Савино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:30<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2922">
+	<a href="#"></a>
+	<h3>Рейс №2922</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2922</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Пермь (Большое Савино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:30<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1218">
+	<a href="#"></a>
+	<h3>Рейс №1218</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1218</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Пермь (Большое Савино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>03:30<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f2862">
+	<a href="#"></a>
+	<h3>Рейс №2862</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>2862</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>КЛМ Королевские Голландские Авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/KL.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Тюмень (Рощино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:21<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1508">
+	<a href="#"></a>
+	<h3>Рейс №1508</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1508</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td>Сухой Суперджет 100-90</td></tr>
+		<tr><td>Аэропорт назначения</td><td>Тюмень (Рощино)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:21<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+<div class="window" id="f1512">
+	<a href="#"></a>
+	<h3>Рейс №1512</h3>
+	<table>
+		<tr><td>Номер рейса</td><td>1512</td></tr>
+		<tr><td>Тип рейса</td><td>Вылет</td></tr>
+		<tr><td>Авокомпания</td><td>Аэрофлот — Российские авиалинии</td></tr>
+		<tr><td>Логотип авиакомпании</td><td><img alt="" src="img/logo/SU.jpg"></td></tr>
+		<tr><td>Тип воздушного судна</td><td></td></tr>
+		<tr><td>Аэропорт назначения</td><td>Сургут (Сургут)</td></tr>
+		<tr><td>Плановое время вылета</td><td>04:50<span class="nn">, 7 августа 2015</span></td></tr>
+		<tr><td>Статус рейса</td><td>вылетел</td></tr>
+		<tr><td>примечание</td><td>Номер стойки регистрации: 4–32</td></tr>
+	</table>
+</div>
+
+</body>
+</html>
